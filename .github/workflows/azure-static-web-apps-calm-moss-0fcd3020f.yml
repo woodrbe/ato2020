@@ -30,7 +30,7 @@ jobs:
           # Built app content directory
           # app_artifact_location: 'dist/angular-app' # 👈 Angular
           # app_artifact_location: 'build' # 👈 React
-          app_artifact_location: "public" # 👈 Svelte
+          app_artifact_location: "build" # 👈 Svelte
           # app_artifact_location: 'dist' # 👈 Vue
           ###### End of Repository/Build Configurations ######
 

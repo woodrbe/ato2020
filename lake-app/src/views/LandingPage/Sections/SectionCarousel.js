@@ -1,6 +1,4 @@
 import React from "react";
-// react component for creating beautiful carousel
-import Carousel from "react-slick";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
@@ -18,14 +16,7 @@ const useStyles = makeStyles(styles);
 
 export default function SectionCarousel() {
   const classes = useStyles();
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-  };
+
 
   const images = [];
   for (let i = 1; i < 28; i++) {

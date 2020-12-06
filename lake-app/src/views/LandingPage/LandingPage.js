@@ -14,14 +14,18 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 
+import image1 from "assets/img/footprint.svg";
+
 
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import SectionCarousel from "./Sections/SectionCarousel"
+import TeamSection from "./Sections/TeamSection";
 
 const dashboardRoutes = [];
+
 
 const useStyles = makeStyles(styles);
 
@@ -46,7 +50,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-              <h1 className={classes.title}>Barefoot at the Lake.</h1>
+              <h1 className={classes.title}> <image1 fill="white"></image1> Barefoot at the Lake.</h1>
               <h4>
                 Come to vist our home on Tim's Ford Lake that sits in the shadows of the Cumberland Plateau in south-central Tennessee. The Tims Ford Lake is considered one of the most picturesque lakes in Tennessee and is regarded as one of the top bass fishing and recreational lakes in the Southeast.
               </h4>
@@ -63,6 +67,9 @@ export default function LandingPage(props) {
           <SectionCarousel />
         </div>
 
+        <div className={classes.container}>
+          <TeamSection />
+        </div>
 
       </div>
       <Footer />

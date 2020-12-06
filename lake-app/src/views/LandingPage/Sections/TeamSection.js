@@ -9,7 +9,6 @@ import { makeStyles } from "@material-ui/core/styles";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
@@ -18,7 +17,6 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/team
 
 import team1 from "assets/img/FloorPlan1.png";
 import team2 from "assets/img/FloorPlan2.png";
-import team3 from "assets/img/faces/kendall.jpg";
 
 const useStyles = makeStyles(styles);
 

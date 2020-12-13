@@ -19,7 +19,7 @@ export default function SectionCarousel() {
 
 
   const images = [];
-  const numOfImages = 47;
+  const numOfImages = 62;
   for (let i = numOfImages; i > 0; i--) {
     const im = { original: `images/image${i}.jpg`, thumbnail: `images/image${i}a.jpg`};
     images.push(im);

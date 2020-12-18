@@ -67,7 +67,7 @@ export default function LandingPage(props) {
           <SectionCarousel />
         </div>
 
-        <div className={classes.container}>
+        <div id="about" className={classes.container}>
           <TeamSection />
         </div>
 

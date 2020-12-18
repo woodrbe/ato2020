@@ -17,6 +17,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/team
 
 import team1 from "assets/img/FloorPlan1.png";
 import team2 from "assets/img/FloorPlan2.png";
+import level10 from "assets/img/level10.jpg"
 
 const useStyles = makeStyles(styles);
 
@@ -31,7 +32,7 @@ export default function TeamSection() {
       <h2 className={classes.title}>About the House</h2>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={6}>
+        <GridItem xs={12} sm={12} md={6}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
                 <img src={team1} alt="..." className={imageClasses} />
@@ -67,6 +68,31 @@ export default function TeamSection() {
               </CardFooter>
             </Card>
           </GridItem>
+          <GridItem xs={12} sm={12} md={12}>
+            <Card plain>
+              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
+                <a href="https://www.facebook.com/Level-10-Construction-LLC-112442857051330" rel="noopener noreferrer" target="_blank">
+                <img src={level10} alt="..." className={imageClasses} />
+              </a>
+
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Custom Home
+                <br />
+                <a href="https://www.facebook.com/Level-10-Construction-LLC-112442857051330" rel="noopener noreferrer" target="_blank">
+                <small className={classes.smallTitle}>Level 10 Construction, LLC</small>
+                </a>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                </p>
+              </CardBody>
+              <CardFooter className={classes.justifyCenter}>
+               
+              </CardFooter>
+            </Card>
+          </GridItem>
+          
         </GridContainer>
       </div>
     </div>

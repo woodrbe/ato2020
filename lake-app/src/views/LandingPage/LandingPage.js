@@ -50,7 +50,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-              <h1 className={classes.title}> <image1 fill="white"></image1> Barefoot at the Lake.</h1>
+              <h1 className={classes.title}> <image1 fill="white"></image1> Barefoot at the Lake</h1>
               <h4>
                 Come to vist our home on Tim's Ford Lake that sits in the shadows of the Cumberland Plateau in south-central Tennessee. The Tims Ford Lake is considered one of the most picturesque lakes in Tennessee and is regarded as one of the top bass fishing and recreational lakes in the Southeast.
               </h4>

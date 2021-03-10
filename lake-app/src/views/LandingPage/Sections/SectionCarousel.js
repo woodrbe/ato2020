@@ -30,7 +30,7 @@ export default function SectionCarousel() {
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
               <Card carousel>
-              <ImageGallery items={images} lazyLoad={true} showThumbnails={false} />
+              <ImageGallery items={images} lazyLoad={true} />
               </Card>
             </GridItem>
           </GridContainer>

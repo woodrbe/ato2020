@@ -21,7 +21,7 @@ export default function SectionCarousel() {
   const images = [];
   const numOfImages = 63;
   for (let i = numOfImages; i > 41; i--) {
-    const im = { original: `images/image${i}.jpg`, thumbnail: `images/image${i}a.jpg`, lazyLoad: true};
+    const im = { original: `images/image${i}.jpg`, thumbnail: `images/image${i}a.jpg`};
     images.push(im);
   }
   return (
@@ -30,7 +30,7 @@ export default function SectionCarousel() {
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
               <Card carousel>
-              <ImageGallery items={images} />
+              <ImageGallery items={images} lazyLoad={true} showThumbnails={false} />
               </Card>
             </GridItem>
           </GridContainer>

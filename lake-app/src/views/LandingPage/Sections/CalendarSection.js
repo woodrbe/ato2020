@@ -1,13 +1,10 @@
 import React from "react";
 // @material-ui/core components
-import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Card from "components/Card/Card.js";
-import CardBody from "components/Card/CardBody.js";
-import CardFooter from "components/Card/CardFooter.js";
 
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
@@ -22,11 +19,8 @@ const useStyles = makeStyles(styles);
 
 export default function HousePlanSection() {
   const classes = useStyles();
-  const imageClasses = classNames(
-    classes.imgRaised,
-    classes.imgFluid
-  );
-  const [state, setState] = useState({
+
+  const [state] = useState({
     selection1: {
       startDate: addDays(new Date(), 1),
       endDate: null,

@@ -23,7 +23,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import SectionCarousel from "./Sections/SectionCarousel"
 import HousePlanSection from "./Sections/HousePlanSection";
-import CalendarSection from "./Sections/CalendarSection"
+// import CalendarSection from "./Sections/CalendarSection"
 
 const dashboardRoutes = [];
 

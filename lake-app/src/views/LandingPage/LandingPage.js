@@ -22,7 +22,8 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import SectionCarousel from "./Sections/SectionCarousel"
-import TeamSection from "./Sections/TeamSection";
+import HousePlanSection from "./Sections/HousePlanSection";
+import CalendarSection from "./Sections/CalendarSection"
 
 const dashboardRoutes = [];
 
@@ -68,8 +69,12 @@ export default function LandingPage(props) {
         </div>
 
         <div id="about" className={classes.container}>
-          <TeamSection />
+          <HousePlanSection />
         </div>
+
+        {/* <div id="about" className={classes.container}>
+          <CalendarSection />
+        </div> */}
 
       </div>
       <Footer />

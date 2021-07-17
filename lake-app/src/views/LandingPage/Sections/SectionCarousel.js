@@ -19,14 +19,15 @@ export default function SectionCarousel() {
 
 
   const images = [];
-  const numOfImages = 63;
-  for (let i = numOfImages; i > 39; i--) {
-    const im = { original: `images/image${i}.jpg`, thumbnail: `images/image${i}a.jpg`};
+  const numOfImages = 36;
+  for (let i = 1; i < numOfImages; i++) {
+
+    const im = { original: `images/image${i}.png`, thumbnail: `images/image${i}.png`};
     images.push(im);
   }
   return (
     <div className={classes.section}>
-          <h1 className={classes.title}>Final Construction Photos</h1>
+          <h1 className={classes.title}>Photos</h1>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
               <Card carousel>
